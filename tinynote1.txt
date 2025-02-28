@@ -1,0 +1,3 @@
+.\bin\mysqld --console
++a5(fwSrLjRf
+password1
