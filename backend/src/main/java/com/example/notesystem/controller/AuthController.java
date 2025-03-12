@@ -19,7 +19,6 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api/auth")
-@CrossOrigin(origins = {"http://localhost:3000", "http://192.168.0.107:3000"})
 public class AuthController {
     @Autowired
     private AuthenticationManager authenticationManager;
@@ -61,4 +60,4 @@ public class AuthController {
             return ResponseEntity.badRequest().body(e.getMessage());
         }
     }
-} 
+}

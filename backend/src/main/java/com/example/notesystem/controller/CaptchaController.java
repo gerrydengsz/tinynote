@@ -9,7 +9,6 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api/captcha")
-@CrossOrigin(origins = {"http://localhost:3000", "http://192.168.0.107:3000"})
 public class CaptchaController {
     @Autowired
     private CaptchaService captchaService;

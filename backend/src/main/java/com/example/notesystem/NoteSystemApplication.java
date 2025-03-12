@@ -8,4 +8,5 @@ public class NoteSystemApplication {
     public static void main(String[] args) {
         SpringApplication.run(NoteSystemApplication.class, args);
     }
+
 }

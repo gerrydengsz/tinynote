@@ -1,6 +1,5 @@
 package com.example.notesystem.util;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.MessageSource;
 import org.springframework.context.i18n.LocaleContextHolder;
 import org.springframework.stereotype.Component;
@@ -10,7 +9,6 @@ public class MessageUtils {
     
     private static MessageSource messageSource;
 
-    @Autowired
     public MessageUtils(MessageSource messageSource) {
         MessageUtils.messageSource = messageSource;
     }

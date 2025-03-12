@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/notes")
-@CrossOrigin(origins = {"http://localhost:3000", "http://192.168.0.107:3000"})
+// 移除 @CrossOrigin 注解
 public class NoteController {
     @Autowired
     private NoteService noteService;
@@ -90,4 +90,4 @@ public class NoteController {
             return ResponseEntity.badRequest().body(MessageUtils.getMessage("note.delete.failed"));
         }
     }
-} 
+}
